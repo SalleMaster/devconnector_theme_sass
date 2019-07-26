@@ -86,3 +86,70 @@ img {
   line-height: 1.8;
   margin-bottom: 1rem;
 }
+
+.profile-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    'top top'
+    'about about'
+    'experiences education'
+    'github github';
+
+  .profile {
+    &-top {
+      grid-area: top;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        color: #fff;
+        margin: 0 1rem;
+      }
+
+      img {
+        width: 250px;
+      }
+    }
+
+    &-about {
+      grid-area: about;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.8;
+
+      .skills {
+        display: flex;
+      }
+    }
+
+    &-experience {
+      grid-area: experiences;
+
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px dotted #ccc;
+
+        h3 {
+          margin: 0.5rem 0;
+        }
+
+        p {
+          margin: 0.5rem 0;
+        }
+      }
+    }
+
+    &-education {
+      grid-area: education;
+    }
+
+    &-github {
+      grid-area: github;
+    }
+  }
+}

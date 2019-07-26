@@ -137,3 +137,11 @@
     @include set-background($danger-color);
   }
 }
+
+// Line
+.line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin: 1rem 0;
+}
