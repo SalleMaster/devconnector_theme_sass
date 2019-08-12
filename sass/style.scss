@@ -146,10 +146,32 @@ img {
 
     &-education {
       grid-area: education;
+
+      div {
+        border-bottom: 1px dotted #ccc;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+
+        * {
+          margin: 0.5rem 0;
+        }
+      }
     }
 
     &-github {
       grid-area: github;
+
+      .repo {
+        display: grid;
+        grid-template-columns: 6fr 2fr;
+
+        .badge {
+          margin: 0.5rem 0;
+          padding: 0.3rem;
+          text-align: center;
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 }
